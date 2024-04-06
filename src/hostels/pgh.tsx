@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 type Hostel = {
   id: number;
@@ -9,12 +11,18 @@ type Hostel = {
 };
 
 const HostelCard = ({ hostel }: { hostel: Hostel }) => (
-  <div>
-    <Link to={`/hostel/${hostel.id}`} className={"block bg-gray-800 text-white p-4 rounded-lg"}>
-    <h2 className={"text-xl font-bold"}>{hostel.name}</h2>
-  </Link>
-    <p>{hostel.description}</p>
-  </div>
+  <Card className={"card-container"} style={{ width: '18rem' }}>
+    <Card.Img variant="top" src={hostel.image} className={"card-image"}/>
+    <Card.Body>
+        <Link to={`/hostel/${hostel.id}`}>
+        <Button variant="primary"><Card.Title>{hostel.name}</Card.Title></Button>
+    </Link>
+
+      <Card.Text>
+        {hostel.description}
+      </Card.Text>
+    </Card.Body>
+  </Card>
 )
 
 export default HostelCard;
