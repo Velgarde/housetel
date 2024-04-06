@@ -25,8 +25,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background-image: url('./assets/bg-whole.jpg');
   background-repeat: no-repeat;
@@ -101,4 +101,21 @@ button:focus-visible {
   color: #ffffff;
   padding: 20px 0;
   margin-bottom: 20px; /* Add this line */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* adjust as needed */
+  margin-top: 50px;
+}
+.form-container label {
+  margin-top: 50px; /* adjust as needed */
+}
+
+.form-container input[type="submit"] {
+  margin-top: 20px; /* adjust as needed */
 }

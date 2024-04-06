@@ -15,7 +15,9 @@ const SubPage = ({ hostel }: { hostel: Hostel }) => (
         <div className="gridwrap">
             <Card className={"card-container"} style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Button variant="primary">Lodge Grievance</Button>
+                    <Link to={`/hostel/${hostel.id}/grievance`}>
+                        <Button variant="primary">Lodge Grievance</Button>
+                    </Link>
                 </Card.Body>
                 <Card.Text>Lodge a Complaint or Grievance to be addressed promptly</Card.Text>
             </Card>
