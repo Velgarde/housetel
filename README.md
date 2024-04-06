@@ -1,0 +1,3 @@
+# HOSTEL Care & Support
+
+This aims to elevate the grievances faced by hostelers and subsequently the hostel in-charges in keeping track and taking care of those issues.modify the workspace and give me code to create a modern looking website with a dark asthetic where the main page where the user lands in contains a number of choices e.g. 10 hostel cards and upon selecting one of those cards, a sub page containing cards like lodge greviance, view grieviance, check room avalibility, request room, hostel chat room, hostel in charge issued notices and there are subsequent pages for each of them
