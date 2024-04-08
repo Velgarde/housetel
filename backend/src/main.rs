@@ -7,10 +7,6 @@ async fn HomePage() -> Option<NamedFile> {
     NamedFile::open("../dist/index.html").await.ok()
 }
 
-async fn DefaultPage() -> Option<NamedFile> {
-    NamedFile::open("../dist/default.html").await.ok()
-}
-
 
 #[launch]
 fn rocket() -> _ {
